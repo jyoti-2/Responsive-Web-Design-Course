@@ -1,0 +1,94 @@
+# Responsive-Web-Design-Course
+
+HTML (Hypertext Markup Language) for content, and CSS (Cascading Style Sheets) for design.
+
+HTML is a markup language that uses a special syntax or notation to describe the structure of a webpage to the browser. HTML elements usually have opening and closing tags that surround and give meaning to content.
+
+As a convention, all HTML tags are written in lowercase, for example <p></p>
+
+Web developers traditionally use lorem ipsum text as placeholder text.
+
+Commenting is also a convenient way to make code inactive without having to delete it entirely.
+
+Comments in HTML start with <!-- and end with a -->
+
+img elements are self-closing and must have an alt attribute. 
+<img src = "https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt = "cat">
+The text inside an alt attribute is used for screen readers to improve accessibility and is displayed if the image fails to load.
+
+We can use a(anchor) elements to link to content outside of your web page.
+<a href = "https://www.google.com"> GOOGLE </a>
+
+a (anchor) elements can also be used to create internal links to jump to different sections within a webpage.
+
+To create an internal link, you assign a link's href attribute to a hash symbol # plus the value of the id attribute for the element that you want to internally link to, usually further down the page. You then need to add the same id attribute to the element you are linking to. An id is an attribute that uniquely describes an element.
+<a href="#contacts-header">Contacts</a>
+...
+<h2 id="contacts-header">Contacts</h2>
+
+<a href="https://www.freecodecamp.org" target="_blank"> ... </a>
+target Specifies where to display the linked URL. It is a name of, or keyword for, a browsing context: a tab, window, or <iframe>. The following keywords have special meanings:
+
+_self: Load the URL into the same browsing context as the current one. This is the default behavior.
+_blank: Load the URL into a new browsing context. This is usually a tab, but users can configure browsers to use new windows instead.
+_parent: Load the URL into the parent browsing context of the current one. If there is no parent, this behaves the same way as _self.
+_top: Load the URL into the top-level browsing context (that is, the "highest" browsing context that is an ancestor of the current one, and has no parent). If there is no parent, this behaves the same way as _self.
+Note: When using target, consider adding rel="noreferrer" to avoid exploitation of the window.opener API.
+
+Note: Linking to another page using target="_blank" will run the new page on the same process as your page. If the new page is executing expensive JS, your page's performance may suffer. To avoid this use rel="noopener".
+
+href attribute value with a # used to create a dead link.
+
+unordered list
+<ul>
+  <li>milk</li>
+  <li>cheese</li>
+</ul>
+
+ordered list
+<ol>
+  <li>Garfield</li>
+  <li>Sylvester</li>
+</ol>
+
+input elements are a convenient way to get input from your user.
+<input type="text" placeholder = "type anything....">
+Note that input elements are self-closing.
+Placeholder text is what is displayed in your input element before your user has inputted anything.
+
+The form element represents a collection of form-associated elements, some of which can represent editable values that can be submitted to a server for processing.
+<form action="/url-where-you-want-to-submit-form-data">
+  <input type="text" placeholder="cat photo URL" required>
+  <button type="submit">Submit</button>
+</form>
+Make your text input a required field, so that your user can't submit the form without completing this field.
+
+Clicking this button will send the data from your form to the URL you specified with your form's action attribute.
+
+Each of your radio buttons can be nested within its own label element. By wrapping an input element inside of a label element it will automatically associate the radio button input with the label element surrounding it.
+
+All related radio buttons should have the same name attribute to create a radio button group. 
+<label for="indoor"> 
+  <input id="indoor" type="radio" name="indoor-outdoor">Indoor 
+</label>
+
+type = "checkbox" -> similar to radio
+Inputs of type radio and checkbox report their values from the value attribute.
+
+You can set a checkbox or radio button to be checked by default using the checked attribute.
+
+The div element, also known as a division element, is a general purpose container for other elements.
+
+ Any markup with information about your page would go into the head tag. Then any markup with the content of the page (what displays for a user) would go into the body tag.
+ Metadata elements, such as link, meta, title, and style, typically go inside the head element.
+
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta />
+  </head>
+  <body>
+    <div>
+    </div>
+  </body>
+</html>
