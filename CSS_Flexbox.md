@@ -1,7 +1,7 @@
 ### Flexbox is a powerful, well-supported layout method that was introduced with the latest version of CSS, CSS3. With flexbox, it's easy to center elements on the page and create dynamic user interfaces that shrink and expand automatically.
 
 Placing the CSS property `display: flex;` on an element allows you to use other flex properties to build a responsive page.
-```
+``` html
 <header>
   <img src="https://freecodecamp.s3.amazonaws.com/quincy-twitter-photo.jpg" alt="Quincy Larson's profile picture" class="profile-thumbnail">
   <div class="profile-name">
@@ -34,7 +34,7 @@ Placing the CSS property `display: flex;` on an element allows you to use other 
 </footer>
 ```
 
-```
+``` CSS
 <style>
   body {
     font-family: Arial, sans-serif;
